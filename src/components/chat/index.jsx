@@ -19,7 +19,7 @@ const ChatGPT = () => {
   return (
     <section className='bg-neutral-100 content-wrapper lg:p-8 p-4 overflow-auto'>
       <div className='max-w-5xl mx-auto'>
-        <div className='md:px-8 px-4 py-4 bg-white rounded shadow md:flex flex-col justify-between items-center'>
+        <div className='md:px-8 px-4 py-4 bg-white rounded shadow md:flex md:flex-row flex-col justify-between items-center'>
           <div className='mb-6 md:mb-0'>
             <h2 className='text-4xl font-bold mb-2'>Brain Chat</h2>
             <p className='text-gray-500 text-sm'>
