@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <section className='bg-neutral-100 content-wrapper lg:p-8 p-4 overflow-auto'>
       <div className='max-w-5xl mx-auto'>
-        <div className='grid grid-cols-2 gap-4'>
-          <div className='px-8 py-4 bg-white rounded shadow'>
+        <div className='grid md:grid-cols-2 grid-cols-1 gap-4'>
+          <div className='md:px-8 px-4 py-4 bg-white rounded shadow'>
             <div className='flex justify-between items-center'>
               <h5 className='text-xl font-bold'>BrainChat</h5>
               <p>

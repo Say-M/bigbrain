@@ -11,7 +11,7 @@ const Sidebar = ({
 }) => {
   return (
     <aside
-      className={'h-screen max-w-xs w-full bg-white border-r flex flex-col lg:relative absolute lg:left-0 -left-full z-50 duration-150'.concat(
+      className={'h-screen max-w-xs w-full bg-white border-r flex flex-col lg:relative absolute lg:left-0 z-50 duration-150'.concat(
         isSidebar ? ' left-0' : ' -left-full'
       )}>
       <div className='max-h-20 h-full flex justify-between items-center py-4 px-8'>

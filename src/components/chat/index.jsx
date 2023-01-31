@@ -7,7 +7,6 @@ const ChatGPT = () => {
   // ! hooks
   const [engines, setEngines] = useState([])
   const [engine, setEngine] = useState('text-davinci-003')
-
   // ! get all engines
   useEffect(() => {
     const configuration = new Configuration({
@@ -20,8 +19,8 @@ const ChatGPT = () => {
   return (
     <section className='bg-neutral-100 content-wrapper lg:p-8 p-4 overflow-auto'>
       <div className='max-w-5xl mx-auto'>
-        <div className='px-8 py-4 bg-white rounded shadow flex justify-between items-center'>
-          <div>
+        <div className='md:px-8 px-4 py-4 bg-white rounded shadow md:flex flex-col justify-between items-center'>
+          <div className='mb-6 md:mb-0'>
             <h2 className='text-4xl font-bold mb-2'>Brain Chat</h2>
             <p className='text-gray-500 text-sm'>
               This is a chatbot powered by GPT-3. It is a work in progress.
@@ -29,7 +28,7 @@ const ChatGPT = () => {
             </p>
           </div>
           <div>
-            <div className='min-w-[10rem] ml-6'>
+            <div className='min-w-[10rem] md:ml-6'>
               <FormSelect
                 label='Select Engines'
                 onChange={({ target }) => setEngine(target.value)}
@@ -43,7 +42,7 @@ const ChatGPT = () => {
             </div>
           </div>
         </div>
-        <div className='px-8 pb-4 pt-6 bg-white rounded shadow mt-4'>
+        <div className='md:px-8 px-4 pb-4 pt-6 bg-white rounded shadow mt-4'>
           <ChatBox engine={engine} />
         </div>
       </div>

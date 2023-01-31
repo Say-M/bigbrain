@@ -62,7 +62,7 @@ const ChatBox = ({ engine }) => {
               </div>
               <img
                 src='https://gravatar.com/avatar/9d8e3a0ba117397bf8bd5a445e06fc38?s=400&d=robohash&r=x'
-                className='w-10 h-10 rounded-full ml-4 order-1 border'
+                className='w-10 h-10 rounded-full order-1 border'
               />
             </div>
             <div className='flex flex-row-reverse mb-4 ml-auto'>
@@ -73,7 +73,7 @@ const ChatBox = ({ engine }) => {
               </div>
               <img
                 src='https://brandlogovector.com/wp-content/uploads/2023/01/ChatGPT-Icon-Logo-PNG.png'
-                className='w-10 h-10 rounded-full mr-4 order-1 border'
+                className='w-10 h-10 rounded-full order-1 border'
               />
             </div>
           </div>
