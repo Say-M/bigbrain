@@ -33,13 +33,13 @@ const ChatBox = ({ engine }) => {
           message,
         ].join('\n'),
         temperature: 0.5,
-        max_tokens: 100,
+        max_tokens: 2000,
       })
       setMessages([
         {
           id: Date.now(),
           human: message,
-          ai: response?.data?.choices[0]?.text,
+          ai: response?.data?.choices[0]?.text?.trim(),
         },
         ...messages,
       ])
@@ -68,7 +68,7 @@ const ChatBox = ({ engine }) => {
             <div className='flex flex-row-reverse mb-4 ml-auto'>
               <div className='flex flex-col max-w-xs mx-2 order-2 items-start'>
                 <div className='rounded-lg px-4 py-2 bg-fuchsia-500 text-white'>
-                  <p className='text-ellipsis'>{message?.ai}</p>
+                  <p className='whitespace-pre'>{message?.ai}</p>
                 </div>
               </div>
               <img

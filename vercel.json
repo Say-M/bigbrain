@@ -1,0 +1,6 @@
+{
+  "rewrite": {
+    "from": "/",
+    "to": "/index.html"
+  }
+}
