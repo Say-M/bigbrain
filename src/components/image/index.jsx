@@ -50,10 +50,10 @@ const MidJourney = () => {
           </div>
         </div>
         <div className='px-8 pb-4 pt-6 bg-white rounded shadow mt-4'>
-          <Form className='flex' onSubmit={handleSubmit}>
+          <Form className='flex sm:flex-row flex-col' onSubmit={handleSubmit}>
             <Form.Area
               label='Convert your imagination into image'
-              className='w-full'
+              className='w-full sm:mb-0 mb-4'
               inputClassName='rounded-r-none disabled:bg-gray-100'
               onChange={(e) => setImage(e.target.value)}
               value={image}

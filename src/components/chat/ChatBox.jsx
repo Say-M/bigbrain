@@ -83,7 +83,7 @@ const ChatBox = ({ engine }) => {
         <Form.Area
           name='chat'
           placeholder='Type your message here...'
-          rows={3}
+          rows={5}
           label='What do you want to ask?'
           className='mb-4'
           inputClassName='disabled:bg-gray-100'
